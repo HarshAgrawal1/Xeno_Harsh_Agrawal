@@ -1,0 +1,45 @@
+/* Container Styling for GoogleAuth */
+.google-auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Google Auth Button */
+  .google-auth-button {
+    display: inline-block;
+    background-color: #4285f4; /* Google's blue color */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .google-auth-button:hover {
+    background-color: #357ae8; /* Darker blue for hover */
+    transform: translateY(-2px); /* Slight hover effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .google-auth-button:active {
+    background-color: #2a65d1; /* Even darker blue for active */
+    transform: translateY(0); /* Reset hover effect on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .google-auth-button {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+      padding: 10px 20px;
+    }
+  }
+  

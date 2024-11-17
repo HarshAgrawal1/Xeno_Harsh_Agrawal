@@ -1,0 +1,89 @@
+.campaign-history {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .campaign-history h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .campaign-history ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .campaign-history li {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .campaign-history li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .campaign-history li div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .campaign-history li strong {
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  .campaign-history li p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .campaign-history li p span {
+    font-weight: bold;
+  }
+  
+  .campaign-history .no-campaigns {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+  }
+  
+  .campaign-history li p.date {
+    color: #888;
+    font-size: 13px;
+  }
+  
+  .campaign-history .loading,
+  .campaign-history .error {
+    text-align: center;
+    color: #d9534f;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .campaign-history {
+      padding: 15px;
+    }
+  
+    .campaign-history li {
+      padding: 15px;
+    }
+  
+    .campaign-history h2 {
+      font-size: 20px;
+    }
+  }
+  

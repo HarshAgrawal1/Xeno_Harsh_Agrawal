@@ -26,7 +26,7 @@ const SegmentList = () => {
     try {
       await axios.delete(`http://localhost:5000/api/audience/${id}`);
       alert('Segment deleted successfully!');
-      fetchSegments(); // Refresh the list after deletion
+      fetchSegments(); 
     } catch (err) {
       console.error('Error deleting segment:', err);
       alert('Failed to delete segment.');

@@ -7,7 +7,7 @@ router.post('/delivery-receipt', async (req, res) => {
   try {
     const { logId, status } = req.body;
 
-    // Update communication log with delivery status
+   
     await CommunicationLog.findByIdAndUpdate(logId, { deliveryStatus: status });
 
     res.json({ success: true, message: 'Delivery status updated' });

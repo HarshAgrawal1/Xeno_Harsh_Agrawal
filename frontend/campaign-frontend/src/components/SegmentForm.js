@@ -4,7 +4,7 @@ import '../style/SegmentForm.css';
 
 const SegmentForm = () => {
   const [name, setName] = useState('');
-  const [logic, setLogic] = useState('AND'); // Default to "AND" logic
+  const [logic, setLogic] = useState('AND'); 
   const [conditions, setConditions] = useState([]);
   const [audienceSize, setAudienceSize] = useState(null);
   const [segments, setSegments]=useState([]);
@@ -38,7 +38,7 @@ const SegmentForm = () => {
       const response = await axios.post('http://localhost:5000/api/audience', {
         name,
         conditions,
-        logic, // Include the logic (AND/OR) in the payload
+        logic, 
       });
       alert('Segment created successfully!');
       fetchSegments();

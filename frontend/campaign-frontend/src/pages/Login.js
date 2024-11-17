@@ -9,7 +9,7 @@ const Login = () => {
       alignItems: 'center',
       justifyContent: 'center',
       minHeight: '100vh',
-      backgroundColor: '#f4f6f9', // Light background for professional appearance
+      backgroundColor: '#f4f6f9',
       padding: '20px',
       boxSizing: 'border-box',
     },

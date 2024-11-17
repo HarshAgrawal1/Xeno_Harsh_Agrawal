@@ -1,7 +1,7 @@
 const Campaign = require('../models/Campaign');
 const AudienceSegment = require('../models/AudienceSegment');
 
-// Get all campaigns for the authenticated user with audience segment details
+
 const getCampaignHistory = async (req, res) => {
   try {
     if (!req.user) {

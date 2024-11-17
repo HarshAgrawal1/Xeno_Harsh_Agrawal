@@ -10,7 +10,7 @@ const CampaignHistory = () => {
   const fetchCampaigns = async () => {
     try {
       const response = await axios.get('http://localhost:5000/api/campaign/history', {
-        withCredentials: true, // Ensure cookies are sent for authentication
+        withCredentials: true, 
       });
       setCampaigns(response.data);
     } catch (err) {

@@ -9,7 +9,6 @@ router.post('/', createSegment);
 //   res.send("Hehhllo");
 // });
 
-// Route to get all audience segments
 router.get('/', getSegments);
 router.post('/preview', previewSize); 
 router.delete('/:id', deleteSegment);

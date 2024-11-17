@@ -7,7 +7,7 @@ router.post('/auth/google', async (req, res) => {
   const { googleId, name, email, avatar } = req.body;
 
   try {
-    // Check if the user already exists
+    
     let user = await User.findOne({ googleId });
 
     if (!user) {

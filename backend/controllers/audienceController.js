@@ -1,21 +1,21 @@
 const AudienceSegment = require("../models/AudienceSegment");
 const Customer = require("../models/Customer"); // Assuming this exists
 
-// Generate a unique Int32 ID for each segment
+
 const generateUniqueId = async () => {
   const lastSegment = await AudienceSegment.findOne().sort({ id: -1 });
   return lastSegment ? lastSegment.id + 1 : 1; // Increment by 1 or start with 1
 };
 
-// Create a new audience segment
+
 const createSegment = async (req, res) => {
   try {
     const { name, conditions, logic } = req.body;
 
-    // Generate a unique Int32 ID
+    
     const id = await generateUniqueId();
 
-    // Build the MongoDB query dynamically
+  
     const query = conditions.map((cond) => {
       const fieldMap = {
         spending: "totalSpending",
@@ -31,10 +31,9 @@ const createSegment = async (req, res) => {
 
     const mongoQuery = logic === "AND" ? { $and: query } : { $or: query };
 
-    // Query the database to get audience size
+    
     const audienceSize = await Customer.countDocuments(mongoQuery);
 
-    // Save the segment
     const segment = new AudienceSegment({
       id,
       name,

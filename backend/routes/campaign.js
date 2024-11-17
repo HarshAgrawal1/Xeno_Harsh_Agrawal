@@ -9,7 +9,7 @@ const ensureAuthenticated = (req, res, next) => {
   res.redirect('/login');
 };
 
-// Get campaign history with audience segment details
+
 router.get('/history', ensureAuthenticated, getCampaignHistory);
 
 // Create a new campaign

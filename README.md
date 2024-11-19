@@ -3,6 +3,10 @@
 This repository contains the Mini CRM & Campaign Management App built as part of the SDE Internship assignment for Xeno. The application implements core CRM functionalities, enabling data ingestion, audience segmentation, and campaign management, aligned with Xeno's mission of delivering meaningful, data-driven customer interactions.
 
 ---
+## Demonstration
+# Demo Video
+A narrated video showcasing the app’s features and functionality is included in the submission.
+https://www.youtube.com/watch?v=DfiXCQ4LiIw
 
 ## Features ✨
 

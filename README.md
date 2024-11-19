@@ -1,4 +1,4 @@
-# Mini CRM & Campaign Management App 🚀
+# Mini CRM & Campaign Management App 
 
 This repository contains the Mini CRM & Campaign Management App built as part of the SDE Internship assignment for Xeno. The application implements core CRM functionalities, enabling data ingestion, audience segmentation, and campaign management, aligned with Xeno's mission of delivering meaningful, data-driven customer interactions.
 
@@ -8,7 +8,7 @@ This repository contains the Mini CRM & Campaign Management App built as part of
 A narrated video showcasing the app’s features and functionality is included in the submission.
 https://www.youtube.com/watch?v=DfiXCQ4LiIw
 
-## Features ✨
+## Features 
 
 ### 1. **Data Ingestion API**  
 - APIs to accept and store customer and order data in a database.  
@@ -36,7 +36,7 @@ https://www.youtube.com/watch?v=DfiXCQ4LiIw
 
 ---
 
-## Tech Stack 💻
+## Tech Stack 
 
 - **Frontend:** React.js  
 - **Backend:** Node.js  

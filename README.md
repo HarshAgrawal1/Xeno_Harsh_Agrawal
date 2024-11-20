@@ -8,6 +8,8 @@ This repository contains the Mini CRM & Campaign Management App built as part of
 A narrated video showcasing the app’s features and functionality is included in the submission.
 https://www.youtube.com/watch?v=DfiXCQ4LiIw
 
+
+
 ## Features 
 
 ### 1. **Data Ingestion API**  
@@ -34,7 +36,8 @@ https://www.youtube.com/watch?v=DfiXCQ4LiIw
   - **Bonus:** Batched database updates via pub-sub model.  
   - Campaign statistics displayed, including audience size, sent messages, and failures.
 
----
+---![Xeno Harsh Agrawal  drawio](https://github.com/user-attachments/assets/a2ab4ed1-a67f-49d4-a9fc-ae17ead028ee)
+
 
 ## Tech Stack 
 
